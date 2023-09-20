@@ -1,3 +1,14 @@
+
+terraform {
+  cloud {
+    organization = "rob0582"
+
+    workspaces {
+      name = "Susan-Test"
+    }
+  }
+}
+
 variable "dct_hostname" {
   type  = string
   description = "dct hostname config file [default: workspace variable set]"  
