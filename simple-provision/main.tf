@@ -1,3 +1,14 @@
+
+terraform {
+  cloud {
+    organization = "rob0582"
+
+    workspaces {
+      name = "Susan-Test"
+    }
+  }
+}
+
 # Configure the connection to Data Control Tower
 provider "delphix" {
   host = var.dct_hostname
