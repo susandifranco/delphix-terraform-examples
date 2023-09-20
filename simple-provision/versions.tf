@@ -1,3 +1,14 @@
+
+terraform {
+  cloud {
+    organization = "rob0582"
+
+    workspaces {
+      name = "Susan-Test"
+    }
+  }
+}
+
 terraform {
   required_providers {
     delphix = {
